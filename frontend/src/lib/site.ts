@@ -15,6 +15,9 @@ export const navItems: NavItem[] = [
 
 export const footerLinks = navItems;
 
+export const whatsappPhone = "919557914389";
+export const whatsappLink = `https://wa.me/${whatsappPhone}`;
+
 export const courseLevels = [
   { level: "N5", duration: "4–5 months", hours: "6 hrs / week", detail: "Build a confident foundation in everyday Japanese, hiragana, katakana, and simple conversation." },
   { level: "N4", duration: "5–6 months", hours: "6 hrs / week", detail: "Navigate daily life, understand familiar topics, and speak with more natural rhythm." },

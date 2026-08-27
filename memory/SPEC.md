@@ -11,7 +11,7 @@ Responsive five-page Japanese-language education consultancy marketing site for 
 - `/success-stories` Success Stories + Contact: certificate placeholder lightbox, testimonials, validated inquiry form.
 
 ## Data and integrations
-This is a static marketing frontend. Contact submission is MOCKED / FRONTEND-ONLY: browser validation shows a success state and does not persist to MongoDB or send email/WhatsApp.
+This is a static marketing frontend. Contact submission is MOCKED / FRONTEND-ONLY for persistence: browser validation opens a prefilled WhatsApp click-to-chat draft for Rohit at `919557914389`; it does not persist to MongoDB or provide delivery confirmation.
 
 ## Visual system
 Primary red is `#A80000` based on the supplied reference image, with wash cream `#F7F1E8`, ink `#241B18`, and warm gold `#E7C36D`. Placeholders are intentional and labeled so real assets can replace them later.
