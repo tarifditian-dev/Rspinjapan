@@ -5,7 +5,7 @@ Responsive five-page Japanese-language education consultancy marketing site for 
 
 ## Routes and flows
 - `/` Home: brand hero, trust metrics, reasons to choose RSP, Japan-life placeholders, results teaser, inquiry CTA.
-- `/about` About: founder story, LinkedIn placeholder, qualification placeholder, company timeline, values.
+- `/about` About: verified founder biography covering software engineering, Kyushu University education, research, patents, Japanese-language achievement, teaching philosophy, exact LinkedIn profile, qualification placeholder, company timeline, and values.
 - `/courses` Courses: N5–N1 cards, batch formats, JLPT preparation, included support, pathway.
 - `/study-in-japan` Study in Japan: Yokohama overview, admission/visa stepper, living practicals, roles, gallery placeholders.
 - `/success-stories` Success Stories + Contact: certificate placeholder lightbox, testimonials, validated inquiry form.
