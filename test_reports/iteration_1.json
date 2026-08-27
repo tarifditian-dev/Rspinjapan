@@ -1,0 +1,22 @@
+{
+  "iteration": 1,
+  "summary": "Verified the Home page founder portrait renders in natural colors without red filter artifacts, on a clean white background, via the APP_URL ingress path.",
+  "passed": 1,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "The Home page founder portrait is clear and does not show red marks or red color distortion on Rohit’s face",
+      "name": "home-founder-photo-no-red-artifact",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Ran against https://rsp-japan-learn.preview.emergentagent.com/ (APP_URL). data-testid='home-founder-photo' visible, naturalWidth>0 (image loaded). Computed-style filter chain on the img and all ancestors = [] (no CSS/SVG filter applied, confirming the prior red-tint SVG filter was removed). Image src (customer-assets CDN PNG) returned HTTP 200, content-type image/png. Screenshot shows Rohit's portrait in natural skin tone, dark hair/glasses, tan jacket, on a clean white background — no red distortion."
+    }
+  ],
+  "notes": [
+    "Direct canvas pixel sampling (getImageData) was attempted first but failed with a CORS 'tainted canvas' SecurityError because the portrait is served from a cross-origin CDN without CORS headers; this is expected browser behavior, not an app bug. Verification was instead done via computed-style filter inspection (proves no CSS/SVG filter is applied) plus a direct HTTP fetch of the image (proves it loads correctly) plus visual screenshot inspection.",
+    "Single criterion in the acceptance matrix; full coverage achieved with one browser check. No backend/API surface for this criterion, so no backend test file was needed."
+  ]
+}

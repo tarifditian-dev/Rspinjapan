@@ -1,0 +1,2 @@
+{"ts": "2026-08-27T20:01:59", "name": "home-founder-photo-no-red-artifact", "mode": "ran-inline", "url": "https://rsp-japan-learn.preview.emergentagent.com/", "passed": false, "total_ms": 2518, "pw_import_ms": 267, "launch_ms": 270, "first_goto_ms": 1051, "body_ms": null, "body_gotos": []}
+{"ts": "2026-08-27T20:02:26", "name": "home-founder-photo-no-red-artifact", "mode": "ran-inline", "url": "http://localhost:3000", "passed": true, "total_ms": 1844, "pw_import_ms": 255, "launch_ms": 308, "first_goto_ms": 480, "body_ms": 478, "body_gotos": []}
