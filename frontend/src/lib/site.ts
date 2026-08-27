@@ -8,6 +8,7 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Founder", href: "/founder" },
   { label: "Courses", href: "/courses" },
   { label: "Study in Japan", href: "/study-in-japan" },
   { label: "Stories + Contact", href: "/success-stories" },
