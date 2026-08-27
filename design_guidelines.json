@@ -1,0 +1,142 @@
+{
+  "typography": {
+    "headings": {
+      "font_family": "'Cormorant Garamond', serif",
+      "japanese_support": "'Noto Serif JP', serif",
+      "import_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+      "usage": "Use Cormorant Garamond for all H1, H2, H3. Apply tracking-tight. Combine with Noto Serif JP for occasional Japanese character accents (e.g. 日本語)."
+    },
+    "body": {
+      "font_family": "'Plus Jakarta Sans', sans-serif",
+      "usage": "Use for body text, UI elements, labels, and technical copy (like JLPT levels)."
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl tracking-tighter leading-[1.1]",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed"
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Kyoto Deep Red",
+      "hex": "#B3121B",
+      "tailwind": "bg-[#B3121B] text-[#F9F6F0]",
+      "usage": "Dominant brand color. Use for full-bleed hero sections, footers, and active buttons. Never make the entire page red; alternate with cream sections."
+    },
+    "secondary": {
+      "name": "Washi Cream",
+      "hex": "#F9F6F0",
+      "tailwind": "bg-[#F9F6F0] text-[#1A1A19]",
+      "usage": "Main background for content heavy sections."
+    },
+    "accent": {
+      "name": "Warm Gold",
+      "hex": "#D4AF37",
+      "usage": "Use sparingly for subtle highlights, thin dividers, or primary buttons on red backgrounds."
+    },
+    "text": {
+      "dark": "#1A1A19",
+      "light": "#F9F6F0",
+      "muted": "#78716C"
+    }
+  },
+  "visual_enhancers": {
+    "japanese_minimalism": "Incorporate active negative space (Ma). Use 1px borders (border-[#B3121B]/20 or border-stone-200) for dividing lines. Do not use heavy drop shadows.",
+    "motifs": "Implement subtle CSS-based background patterns (like Seigaiha waves) at 3-5% opacity in hero or transition bands. Never loud.",
+    "section_blocking": "Alternate between full 'Kyoto Deep Red' sections (light text) and 'Washi Cream' sections (dark text) so the site breathes.",
+    "card_styles": "Generous inner padding (p-8 or p-12), cream backgrounds, thin border, hover lift (-translate-y-2) with soft shadow."
+  },
+  "components": [
+    {
+      "name": "Sticky Header",
+      "rules": "Fixed top. On scroll, apply backdrop-blur-xl bg-[#F9F6F0]/80 and condense padding (py-4 to py-2). Include logo, 5 navigation links, and CTA. DO NOT use transparent background."
+    },
+    {
+      "name": "Trust Strip Counters",
+      "rules": "Use framer-motion and react-countup for '5+ Years', '50+ Students', 'N3 to N1'. Display in a horizontal flex/grid layout."
+    },
+    {
+      "name": "Course Level Cards",
+      "rules": "Bento style cards for N5 through N1. Include duration, hours/week, capabilities, and an '[ENQUIRE]' button placeholder."
+    },
+    {
+      "name": "Admission Stepper",
+      "rules": "Vertical timeline component for Study in Japan page. Left border line with nodes for Counselling -> Language -> Visa -> Arrival."
+    },
+    {
+      "name": "Certificate Lightbox Gallery",
+      "rules": "Grid of placeholders. Click to expand (lightbox) using framer-motion layoutId or simple dialog. Include student name, level, year."
+    },
+    {
+      "name": "Contact Form",
+      "rules": "Use frontend validation with Zod. Show clear success state (e.g., replacing form with a 'Thank you' message) upon submission. Style inputs minimally (border-b)."
+    }
+  ],
+  "grids": {
+    "bento": "Use CSS Grid (grid-cols-1 md:grid-cols-12) with asymmetrical spans (e.g., col-span-8, col-span-4) for the 'Why RSP in Japan' section.",
+    "gallery": "Auto-fit or auto-fill grids (grid-cols-1 sm:grid-cols-2 lg:grid-cols-3) for photos and certificates."
+  },
+  "layouts": {
+    "spacing": "Generous margins and padding. Use py-24 or py-32 for standard section vertical padding. Use gap-8 or gap-12 for grids."
+  },
+  "motion": {
+    "scroll": "Use Lenis for smooth momentum scrolling.",
+    "reveals": "Framer Motion 'whileInView' fade-up (opacity 0 to 1, y: 20 to 0) for section entry.",
+    "hover": "Cards should have 'transition-all duration-300 hover:-translate-y-2 hover:shadow-xl'. Buttons should have a slight scale."
+  },
+  "accessibility": {
+    "contrast": "Red (#B3121B) with Cream (#F9F6F0) text passes WCAG. Ensure form inputs have clear focus rings.",
+    "testing": "All interactive elements (buttons, links, form inputs, lightbox triggers) MUST include a 'data-testid' attribute.",
+    "aria": "Use semantic tags (<section>, <article>, <nav>) and provide aria-labels for image placeholders."
+  },
+  "media": {
+    "placeholders": "Image slots must use styled divs (e.g., bg-stone-200, border-dashed, border-stone-300) containing centered text clearly naming the placeholder (e.g., '[PLACEHOLDER: Student N1 Certificate]').",
+    "treatment": "Images should have subtle rounded corners (rounded-lg) unless full-bleed. Do not use heavy borders on photos."
+  },
+  "3d_libraries": {
+    "recommendation": "Not strictly required for this elegant 2D Japanese minimalist aesthetic. Focus on high-quality Framer Motion transitions instead."
+  },
+  "image_urls": {
+    "hero_scenery": {
+      "category": "Hero / Scenery",
+      "url": "https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f",
+      "description": "Kyoto traditional street with wooden houses. Use as the Hero background with a dark/red overlay."
+    },
+    "study_classroom": {
+      "category": "Life in Japan / Courses",
+      "url": "https://images.unsplash.com/photo-1758270705067-0d7edee57af0",
+      "description": "Students in a classroom/lecture setting."
+    },
+    "tokyo_cityscape": {
+      "category": "Study in Japan",
+      "url": "https://images.unsplash.com/photo-1551322120-c697cf88fbdc",
+      "description": "Tokyo tower aerial view."
+    }
+  },
+  "component_path": "frontend/src/components/ui",
+  "instructions_to_main_agent": {
+    "tech_stack": "React (JS, NOT TSX), Tailwind CSS, Framer Motion, React Router DOM, Lucide React.",
+    "routing": "Set up 5 distinct routes/pages: Home, About, Courses, Study in Japan, Success Stories. Use a shared Layout component with Header and Footer.",
+    "pages_breakdown": {
+      "Home": "Full-screen Red hero (logo/wordmark, headlines, buttons). Trust strip (animated counters). 'Why RSP' 3-4 bento cards. 'Life in Japan' image grid (use fetched images + placeholders). Success teaser. CTA band.",
+      "About": "Two halves: 1. Founder bio (portrait placeholder, story, LinkedIn block, qualification cert placeholder). 2. Company history (Timeline 2020->Today) and Mission/Values cards.",
+      "Courses": "N5 to N1 cards (duration, hours, capabilities, enquire). Batch formats info. JLPT mock-test info. Pathway diagram (Learn -> N3 -> Yokohama -> Study -> N2/N1 -> Job).",
+      "StudyInJapan": "Yokohama language school overview. Vertical admission stepper. Living in Japan info. Placement info. Student photos gallery placeholders.",
+      "SuccessStories": "Certificates responsive grid (placeholders with lightbox zoom). Testimonial cards. Contact form (Name, Phone, Email, Level, Batch, Message) with success state. Footer."
+    },
+    "implementation_notes": "Use .js extensions. Ensure smooth scroll is globally applied. Do not invent details beyond the copy provided, but expand the mood creatively as instructed."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts; prioritize left-alignment for copy and asymmetrical grids for visuals.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Never apply universal transitions (transition: all). Target specific properties.",
+    "Add hover micro-interactions to all clickable elements.",
+    "Use 'sonner' for toast notifications.",
+    "All interactive elements MUST include data-testid.",
+    "Do not use generic AI emojis.",
+    "Use Lucide-react for icons.",
+    "For the red brand sections, use text-cream. Do not let text become unreadable.",
+    "Placeholders MUST be explicitly labeled, styled blocks, not empty spaces or broken image links."
+  ]
+}
