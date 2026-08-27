@@ -17,6 +17,7 @@ export const footerLinks = navItems;
 
 export const whatsappPhone = "919557914389";
 export const whatsappLink = `https://wa.me/${whatsappPhone}`;
+export const founderPhotoUrl = "https://customer-assets-0z36b82j.emergentagent.net/job_rsp-japan-learn/artifacts/ck26a83g_Minimalist%20professional%20corporate%20Marketing%20Plan%20charts%20and%20graphs%20presentation.png";
 
 export const courseLevels = [
   { level: "N5", duration: "4–5 months", hours: "6 hrs / week", detail: "Build a confident foundation in everyday Japanese, hiragana, katakana, and simple conversation." },
